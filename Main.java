@@ -18,7 +18,7 @@ public class Main {
     long sortingTime;
 	long startTime;
 	int numOfKeyComparisms;
-	resultOut.print("========Insertion Sort========\n");
+	resultOut.print("Insertion Sort\n");
 	resultOut.print("Data Size,	CPU Time,	Number of Key Comparism\n");
     for(File f:textFileList){
     	Sorter s = new Sorter();
@@ -37,7 +37,7 @@ public class Main {
  		numOfKeyComparisms = s.getInsertionSortKeyComp();
  		resultOut.print(dataSize+",	"+sortingTime+",	"+numOfKeyComparisms+"\n");
     	}
-    resultOut.print("========MergeSort========\n");
+    resultOut.print("MergeSort\n");
     resultOut.print("Data Size,	CPU Time,	Number of Key Comparism\n");
     for(File f:textFileList){
     	Sorter s = new Sorter();
