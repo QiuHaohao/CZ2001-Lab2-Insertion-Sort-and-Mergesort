@@ -4,10 +4,7 @@ class InsertionSort{
 		for(int i=0;i<n;i++){
 			for(int j=i;j>0;j--){
 				if (arr[j]<arr[j-1]){
-					//swap
-					temp = arr[j];
-					arr[j] = arr[j-1];
-					arr[j-1] = temp;
+					swap(arr,j,j-1);
 				}
 				else{
 					break;
@@ -15,5 +12,10 @@ class InsertionSort{
 			}
 		}
 		return arr;
+	}
+	public static void swap(int[] arr, int a, int b){
+	  int temp = arr[a];
+	  arr[a] = arr[b];
+	  arr[b] = temp;
 	}
 }
