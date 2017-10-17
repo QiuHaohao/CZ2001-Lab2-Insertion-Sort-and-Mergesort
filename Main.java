@@ -29,9 +29,11 @@ public class Main {
  		//read in data
  		for (int i=0;i<dataSize;i++)
 			arr[i] = Integer.parseInt(fi.next());
+
  		startTime = System.nanoTime();
  		s.insertionSort(arr,dataSize);
  		sortingTime = System.nanoTime() - startTime;
+
  		numOfKeyComparisms = s.getInsertionSortKeyComp();
  		resultOut.print(dataSize+",	"+sortingTime+",	"+numOfKeyComparisms+"\n");
     	}
@@ -46,9 +48,11 @@ public class Main {
  		//read in data
  		for (int i=0;i<dataSize;i++)
 			arr[i] = Integer.parseInt(fi.next());
+
  		startTime = System.nanoTime();
  		s.mergeSort(arr,0,dataSize-1);
  		sortingTime = System.nanoTime() - startTime;
+ 		
  		numOfKeyComparisms = s.getMergeSortKeyComp();
  		resultOut.print(dataSize+",	"+sortingTime+",	"+numOfKeyComparisms+"\n");
     	}
