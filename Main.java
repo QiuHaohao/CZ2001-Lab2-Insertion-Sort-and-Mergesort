@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 public class Main {
 	public static void main(String[] args) throws FileNotFoundException,IOException{
         Scanner sc = new Scanner(System.in);
@@ -38,7 +39,7 @@ public class Main {
             		textFileList.add(listOfFiles[i]);
           		} 
         	}
-        
+        Collections.sort(textFileList);
         long sortingTime;
     	long startTime;
     	int numOfKeyComparisms;
